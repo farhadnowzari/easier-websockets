@@ -7,7 +7,16 @@
   "author": "Farhad Nowzari",
   "license": "MIT",
   "private": false,
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rimraf ./dist && tsc"
+  },
   "devDependencies": {
+    "rimraf": "^6.0.1",
     "typescript": "^5.8.3"
+  },
+  "volta": {
+    "node": "20.0.0",
+    "yarn": "1.22.19"
   }
 }
