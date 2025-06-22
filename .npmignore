@@ -1,0 +1,8 @@
+src/
+tests/
+__tests__/
+*.test.ts
+tsconfig.json
+.npmignore
+.github/
+.vscode/

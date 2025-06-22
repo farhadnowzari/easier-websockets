@@ -7,6 +7,9 @@
   "author": "Farhad Nowzari",
   "license": "MIT",
   "private": false,
+  "files": [
+    "dist"
+  ],
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "rimraf ./dist && tsc"

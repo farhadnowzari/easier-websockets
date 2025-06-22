@@ -21,4 +21,4 @@ const disconnect = (url: string) => {
     console.info(`WebSocket connection to ${url} closed.`);
 }
 
-export { connect, disconnect, connections };
+export { connect, disconnect, connections, type EasyWebsocket };
