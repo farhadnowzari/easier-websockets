@@ -29,6 +29,11 @@ jobs:
           registry-url: https://registry.npmjs.org/
 
       - run: yarn install --frozen-lockfile
+      - name: Set version from Git tag
+        run: |
+          TAG_NAME=${GITHUB_REF#refs/tags/}
+          echo "Using tag version: $TAG_NAME"
+          yarn version --new-version "$TAG_NAME" --no-git-tag-version
 
       - name: Publish to npm
         run: yarn publish --non-interactive
