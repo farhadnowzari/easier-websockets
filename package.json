@@ -1,5 +1,5 @@
 {
-  "name": "@farhadnowzari/easy-websockets",
+  "name": "easier-websockets",
   "version": "1.0.0",
   "description": "Intuitive websocket client wrapper for UI projects",
   "main": "dist/index.js",
