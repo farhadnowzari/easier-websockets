@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "target": "ES6", // Specify ECMAScript target version
+        "module": "ESNext", // Use ES module syntax for import/export
+        "strict": true, // Enable all strict type-checking options
+        "esModuleInterop": true, // Enable compatibility with CommonJS and ES Modules
+        "skipLibCheck": true, // Skip type checking of declaration files
+        "forceConsistentCasingInFileNames": true, // Ensure consistent casing in imports
+        "outDir": "./dist", // Redirect output structure to the "dist" folder
+        "rootDir": "./src", // Specify the root directory of input files
+        "declaration": true, // Generate .d.ts files
+        "declarationMap": true // Generate source maps for declarations
+    },
+    "include": ["src/**/*"], // Include all TypeScript files in the "src" folder
+    "exclude": ["node_modules", "dist"] // Exclude "node_modules" and "dist" folders
+}

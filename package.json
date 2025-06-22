@@ -1,0 +1,13 @@
+{
+  "name": "easy-websockets",
+  "version": "1.0.0",
+  "description": "Intuitive websocket client wrapper for UI projects",
+  "main": "dist/index.js",
+  "repository": "https://github.com/farhadnowzari/easy-websocket",
+  "author": "Farhad Nowzari",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}
