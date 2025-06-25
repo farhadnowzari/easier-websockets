@@ -36,9 +36,8 @@ export default class EasyWebsocket {
      */
     on<T extends any, E extends WebSocketEvent = WebSocketEvent>(event: E, callback: WebsocketHandler<T>) {
         if (!this.handlers) {
-            this.handlers = {
-                event: callback
-            };
+            this.handlers = {};
+            this.handlers[event] = callback;
             return
         }
         if (this.handlers[event as string]) {
