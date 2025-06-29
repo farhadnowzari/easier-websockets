@@ -40,8 +40,9 @@ export default class EasyWebsocket {
             this.handlers[event] = callback;
             return
         }
-        if (this.handlers[event as string]) {
-            console.warn(`Event ${String(event)} already exists. Overwriting.`);
+        if (this.handlers[event]) {
+            console.warn(`Event ${event} already exists. Skipping.`);
+            return;
         }
         this.handlers[event] = callback;
     }
